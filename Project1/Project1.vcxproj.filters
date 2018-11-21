@@ -60,6 +60,12 @@
     <ClInclude Include="GameConstants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsteroidsSDL.cpp">
@@ -104,9 +110,18 @@
     <ClCompile Include="cTextureMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Images\Sprites\Missile.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Desktop\Rum Game\Images\Buttons\button_exit.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

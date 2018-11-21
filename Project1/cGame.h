@@ -67,6 +67,13 @@ private:
 	int renderWidth, renderHeight;
 	int theScore;
 	string strScore;
+	
+	gameState theGameState;
+	cTexture* tempTextTexture;
+
+
+	
+
 };
 
 #endif

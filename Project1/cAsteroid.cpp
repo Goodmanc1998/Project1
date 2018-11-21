@@ -29,7 +29,7 @@ void cAsteroid::update(double deltaTime)
 
 
 	//Movement of the Missiles
-	currentSpritePos.y += (currentSpritePos.y + 40) * deltaTime; // * asteroidVelocity
+	currentSpritePos.y += (currentSpritePos.y + 30) * deltaTime; // * asteroidVelocity
 
 	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });
 	this->setBoundingRect(this->getSpritePos());
