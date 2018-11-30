@@ -5,6 +5,7 @@ cAsteroid.cpp
 =================
 */
 #include "cAsteroid.h"
+#include "cGame.h"
 
 /*
 =================================================================
@@ -29,11 +30,21 @@ void cAsteroid::update(double deltaTime)
 
 
 	//Movement of the Missiles
-	currentSpritePos.y += (currentSpritePos.y + 30) * deltaTime; // * asteroidVelocity
+	currentSpritePos.y += asteroidVelocity; // * asteroidVelocity
+
+	//cout << currentSpritePos.y << endl;
 
 	this->setSpritePos({ currentSpritePos.x, currentSpritePos.y });
 	this->setBoundingRect(this->getSpritePos());
 
+	if (currentSpritePos.y > 600)
+	{
+		//this->setActive(false);	
+		//this->setSpritePos({ currentSpritePos.x, -100 });
+
+//		void.MissileDestroy();
+		
+	}
 }
 
 

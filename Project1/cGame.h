@@ -30,8 +30,12 @@ public:
 	bool getInput(bool theLoop);
 	double getElapsedSeconds();
 
+	void MissileDestroy(double deltaTime);
+
 
 	static cGame* getInstance();
+
+	int theScore = 0;
 
 private:
 
@@ -65,15 +69,14 @@ private:
 	// Game objects
 	// Define the elements and there position in/on the array/map
 	int renderWidth, renderHeight;
-	int theScore;
+
 	string strScore;
 	
 	gameState theGameState;
 	cTexture* tempTextTexture;
 
-
-	
+	SDL_Rect pos;
+	FPoint scale;
 
 };
-
 #endif

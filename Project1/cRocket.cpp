@@ -13,7 +13,7 @@ Defualt Constructor
 */
 cRocket::cRocket() : cSprite()
 {
-	this->rocketVelocity = 100;
+	//this->rocketVelocity = 100;
 }
 /*
 =================================================================
@@ -52,10 +52,11 @@ void cRocket::setRocketVelocity(int rocketVel)
 Gets the rocket velocity
 =================================================================
 */
-int cRocket::getRocketVelocity()
+/*int cRocket::getRocketVelocity()
 {
-	return rocketVelocity;
+	//return rocketVelocity;
 }
+*/
 /*
 =================================================================
 Sets the move value for the rocket

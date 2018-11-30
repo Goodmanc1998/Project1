@@ -9,6 +9,7 @@ cAsteroid.h
 #define _CASTEROID_H
 #include "cSprite.h"
 
+
 class cAsteroid : public cSprite
 {
 private:

@@ -124,5 +124,11 @@
     <Image Include="..\..\..\..\Desktop\Rum Game\Images\Buttons\button_exit.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\..\..\..\Desktop\kEYS NEEDED.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Sprites\Keys.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
