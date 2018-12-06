@@ -148,12 +148,12 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButton.h" />
-    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.h" />
     <ClInclude Include="asteroidsGame.h" />
     <ClInclude Include="cAsteroid.h" />
     <ClInclude Include="cBkGround.h" />
     <ClInclude Include="cBullet.h" />
+    <ClInclude Include="cButton.h" />
+    <ClInclude Include="cButtonMgr.h" />
     <ClInclude Include="cFont.h" />
     <ClInclude Include="cFontMgr.h" />
     <ClInclude Include="cGame.h" />
@@ -167,12 +167,12 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     <ClInclude Include="GameConstants.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButton.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.cpp" />
     <ClCompile Include="AsteroidsSDL.cpp" />
     <ClCompile Include="cAsteroid.cpp" />
     <ClCompile Include="cBkGround.cpp" />
     <ClCompile Include="cBulletStuVer.cpp" />
+    <ClCompile Include="cButton.cpp" />
+    <ClCompile Include="cButtonMgr.cpp" />
     <ClCompile Include="cFont.cpp" />
     <ClCompile Include="cFontMgr.cpp" />
     <ClCompile Include="cGameStuVer.cpp" />
@@ -187,6 +187,7 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
   <ItemGroup>
     <Image Include="..\..\..\..\Desktop\kEYS NEEDED.png" />
     <Image Include="..\..\..\..\Desktop\Rum Game\Images\Buttons\button_exit.png" />
+    <Image Include="Images\Buttons\button_save.png" />
     <Image Include="Images\Sprites\Keys.png" />
     <Image Include="Images\Sprites\Missile.png" />
   </ItemGroup>

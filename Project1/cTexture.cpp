@@ -53,7 +53,7 @@ bool cTexture::loadTexture(LPCSTR theFilename, SDL_Renderer *theRenderer) 	// cr
 	// Check the Texture has been created from the surface
 	if (sdlTextureID != 0)
 	{
-		cout << "Texture '" << theFilename << "' successfully loaded." << endl;
+		//cout << "Texture '" << theFilename << "' successfully loaded." << endl;
 		SDL_QueryTexture(sdlTextureID, NULL, NULL, &textureWidth, &textureHeight); // determine the width an height of the texture
 		return true;
 	}

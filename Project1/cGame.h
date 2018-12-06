@@ -30,12 +30,11 @@ public:
 	bool getInput(bool theLoop);
 	double getElapsedSeconds();
 
-	void MissileDestroy(double deltaTime);
-
 
 	static cGame* getInstance();
 
-	int theScore = 0;
+	int theScore;
+	int missileDestroyed;
 
 private:
 
@@ -44,6 +43,8 @@ private:
 	time_point< high_resolution_clock > m_lastTime;
 	time_point< high_resolution_clock > m_CurrentTime;
 	duration< double > deltaTime;
+
+	bool loop;
 
 	// Sprites for displaying background and rocket textures
 	cSprite spriteBkgd;
@@ -77,6 +78,19 @@ private:
 
 	SDL_Rect pos;
 	FPoint scale;
+
+	vector<LPCSTR> btnNameList;
+	vector<LPCSTR> btnTexturesToUse;
+	vector<SDL_Point> btnPos;
+	vector <cButton> theButtons;
+	SDL_Point theAreaClicked;
+	btnTypes theBtnType;
+
+	bool scoreChange = false;
+	bool lifeChange = false;
+
+	int lifes;
+	string strLifes;
 
 };
 #endif

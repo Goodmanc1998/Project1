@@ -60,10 +60,10 @@
     <ClInclude Include="GameConstants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButton.h">
+    <ClInclude Include="cButton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.h">
+    <ClInclude Include="cButtonMgr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -110,10 +110,10 @@
     <ClCompile Include="cTextureMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButtonMgr.cpp">
+    <ClCompile Include="cButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Desktop\Rum Game\cButton.cpp">
+    <ClCompile Include="cButtonMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -128,6 +128,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Images\Sprites\Keys.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Buttons\button_save.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
