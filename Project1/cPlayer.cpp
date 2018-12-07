@@ -30,48 +30,8 @@ void cPlayer::update(double deltaTime)
 	direction.Y = (float)(sin(rads));
 
 	SDL_Rect currentSpritePos = this->getSpritePos();
-	
-	//currentSpritePos.x += (int)(this->rocketVelocity * direction.X * this->move * deltaTime);
-	//currentSpritePos.y -= (int)(this->rocketVelocity * direction.Y * this->move * deltaTime);
 
 	this->setSpritePos({ currentSpritePos.x , currentSpritePos.y  });
 	this->setBoundingRect(this->getSpritePos());
 
-}
-/*
-=================================================================
-Sets the velocity for the rocket
-=================================================================
-
-void cPlayer::setRocketVelocity(int rocketVel)
-{
-	rocketVelocity = rocketVel;
-}
-
-=================================================================
-Gets the rocket velocity
-=================================================================
-*/
-/*int cPlayer::getRocketVelocity()
-{
-	//return rocketVelocity;
-}
-*/
-/*
-=================================================================
-Sets the move value for the rocket
-=================================================================
-*/
-void cPlayer::setRocketMove(int rocketMove)
-{
-	move = rocketMove;
-}
-/*
-=================================================================
-Gets the rocket move value
-=================================================================
-*/
-int cPlayer::getRocketMove()
-{
-	return move;
 }

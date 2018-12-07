@@ -18,7 +18,5 @@ private:
 public:
 	cPlayer();
 	void update(double deltaTime);		// Player update method
-	void setRocketMove(int rocketMove);   // Sets the rocket move Value
-	int getRocketMove();				 // Gets the rocket move value
 }; 
 #endif
