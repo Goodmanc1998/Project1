@@ -148,8 +148,8 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="asteroidsGame.h" />
-    <ClInclude Include="cAsteroid.h" />
+    <ClInclude Include="missileControlGame.h" />
+    <ClInclude Include="cMissile.h" />
     <ClInclude Include="cBkGround.h" />
     <ClInclude Include="cBullet.h" />
     <ClInclude Include="cButton.h" />
@@ -157,7 +157,8 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     <ClInclude Include="cFont.h" />
     <ClInclude Include="cFontMgr.h" />
     <ClInclude Include="cGame.h" />
-    <ClInclude Include="cRocket.h" />
+    <ClInclude Include="cHighScoreTable.h" />
+    <ClInclude Include="cPlayer.h" />
     <ClInclude Include="cSDL2WNDManager.h" />
     <ClInclude Include="cSound.h" />
     <ClInclude Include="cSoundMgr.h" />
@@ -168,15 +169,16 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AsteroidsSDL.cpp" />
-    <ClCompile Include="cAsteroid.cpp" />
+    <ClCompile Include="cMissile.cpp" />
     <ClCompile Include="cBkGround.cpp" />
     <ClCompile Include="cBulletStuVer.cpp" />
     <ClCompile Include="cButton.cpp" />
     <ClCompile Include="cButtonMgr.cpp" />
     <ClCompile Include="cFont.cpp" />
     <ClCompile Include="cFontMgr.cpp" />
-    <ClCompile Include="cGameStuVer.cpp" />
-    <ClCompile Include="cRocket.cpp" />
+    <ClCompile Include="cGame.cpp" />
+    <ClCompile Include="cHighScoreTable.cpp" />
+    <ClCompile Include="cPlayer.cpp" />
     <ClCompile Include="cSDL2WNDManager.cpp" />
     <ClCompile Include="cSound.cpp" />
     <ClCompile Include="cSoundMgr.cpp" />

@@ -1,6 +1,6 @@
 /*
 =================
-cRocket.cpp
+cPlayer.cpp
 - Header file for class definition - IMPLEMENTATION
 =================
 */

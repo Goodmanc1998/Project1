@@ -10,7 +10,7 @@ cGame.h
 #include <SDL.h>
 #include <random>
 // Game specific includes
-#include "asteroidsGame.h"
+#include "missileControlGame.h"
 
 
 using namespace std;
@@ -33,8 +33,8 @@ public:
 
 	static cGame* getInstance();
 
-	int theScore;
-	int missileDestroyed;
+
+	int missileDestroyed; // Used to count the amout of missiles the player destroys
 
 private:
 
@@ -48,14 +48,14 @@ private:
 
 	// Sprites for displaying background and rocket textures
 	cSprite spriteBkgd;
-	cRocket theRocket;
-	cAsteroid theAsteroid;
+	cPlayer thePlayer;
+	cMissile theMissile;
 	cBullet theBullet;
 	// game related variables
 	vector<LPCSTR> textureName;
 	vector<LPCSTR> textName;
 	vector<LPCSTR> texturesToUse;
-	vector<cAsteroid*> theAsteroids;
+	vector<cMissile*> theMissiles;
 	vector<cBullet*> theBullets;
 	vector<cSprite*> theExplosions;
 	// Fonts to use
@@ -71,14 +71,15 @@ private:
 	// Define the elements and there position in/on the array/map
 	int renderWidth, renderHeight;
 
-	string strScore;
+
 	
-	gameState theGameState;
+	gameState theGameState; 
 	cTexture* tempTextTexture;
 
 	SDL_Rect pos;
 	FPoint scale;
 
+	//Used for buttons
 	vector<LPCSTR> btnNameList;
 	vector<LPCSTR> btnTexturesToUse;
 	vector<SDL_Point> btnPos;
@@ -86,11 +87,17 @@ private:
 	SDL_Point theAreaClicked;
 	btnTypes theBtnType;
 
+
+	//Used to save players score and lives
+	int theScore;
+	int lifes;
+	// Used to turn theScore and lifes into string variables
+	string strScore;
+	string strLifes;
+
+	// Used to run if statement to update score and life changes
 	bool scoreChange = false;
 	bool lifeChange = false;
-
-	int lifes;
-	string strLifes;
 
 };
 #endif

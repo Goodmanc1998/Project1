@@ -2,7 +2,6 @@
 == == == == == == == == =
 cFontMgr.h
 - Header file for class definition - SPECIFICATION
-- Header file for the InputMgr class
 == == == == == == == == =
 */
 #ifndef _CFONTMGR_H

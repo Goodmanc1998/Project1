@@ -1,17 +1,17 @@
 /*
 =================
-cRocket.cpp
+cPlayer.cpp
 - Header file for class definition - IMPLEMENTATION
 =================
 */
-#include "cRocket.h"
+#include "cPlayer.h"
 
 /*
 =================================================================
 Defualt Constructor
 =================================================================
 */
-cRocket::cRocket() : cSprite()
+cPlayer::cPlayer() : cSprite()
 {
 	//this->rocketVelocity = 100;
 }
@@ -21,7 +21,7 @@ Update the sprite position
 =================================================================
 */
 
-void cRocket::update(double deltaTime)
+void cPlayer::update(double deltaTime)
 {
 	auto rads = PI / 180.0f * (this->getSpriteRotAngle() - 90.0f);
 
@@ -42,17 +42,17 @@ void cRocket::update(double deltaTime)
 =================================================================
 Sets the velocity for the rocket
 =================================================================
-*/
-void cRocket::setRocketVelocity(int rocketVel)
+
+void cPlayer::setRocketVelocity(int rocketVel)
 {
 	rocketVelocity = rocketVel;
 }
-/*
+
 =================================================================
 Gets the rocket velocity
 =================================================================
 */
-/*int cRocket::getRocketVelocity()
+/*int cPlayer::getRocketVelocity()
 {
 	//return rocketVelocity;
 }
@@ -62,7 +62,7 @@ Gets the rocket velocity
 Sets the move value for the rocket
 =================================================================
 */
-void cRocket::setRocketMove(int rocketMove)
+void cPlayer::setRocketMove(int rocketMove)
 {
 	move = rocketMove;
 }
@@ -71,7 +71,7 @@ void cRocket::setRocketMove(int rocketMove)
 Gets the rocket move value
 =================================================================
 */
-int cRocket::getRocketMove()
+int cPlayer::getRocketMove()
 {
 	return move;
 }

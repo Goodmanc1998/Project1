@@ -1,10 +1,10 @@
 /*
 =================
-cAsteroid.cpp
+cMissile.cpp
 - Header file for class definition - IMPLEMENTATION
 =================
 */
-#include "cAsteroid.h"
+#include "cMissile.h"
 #include "cGame.h"
 
 /*
@@ -12,9 +12,9 @@ cAsteroid.cpp
 Defualt Constructor
 =================================================================
 */
-cAsteroid::cAsteroid() : cSprite()
+cMissile::cMissile() : cSprite()
 {
-	this->asteroidVelocity = 0;
+	this->missileVelocity = 0;
 }
 /*
 =================================================================
@@ -22,7 +22,7 @@ Update the sprite position
 =================================================================
 */
 
-void cAsteroid::update(double deltaTime)
+void cMissile::update(double deltaTime)
 {
 	SDL_Rect currentSpritePos = this->getSpritePos();
 	//currentSpritePos.x += (int)(this->getSpriteTranslation().x * deltaTime);
@@ -30,7 +30,7 @@ void cAsteroid::update(double deltaTime)
 
 
 	//Movement of the Missiles
-	currentSpritePos.y += asteroidVelocity; // * asteroidVelocity
+	currentSpritePos.y += missileVelocity; // * missileVelocity
 
 	//cout << currentSpritePos.y << endl;
 
@@ -53,16 +53,16 @@ void cAsteroid::update(double deltaTime)
   Sets the velocity for the Asteroid
 =================================================================
 */
-void cAsteroid::setAsteroidVelocity(int AsteroidVel)
+void cMissile::setmissileVelocity(int AsteroidVel)
 {
-	asteroidVelocity = AsteroidVel;
+	missileVelocity = AsteroidVel;
 }
 /*
 =================================================================
   Gets the Asteroid velocity
 =================================================================
 */
-int cAsteroid::getAsteroidVelocity()
+int cMissile::getmissileVelocity()
 {
-	return asteroidVelocity;
+	return missileVelocity;
 }
