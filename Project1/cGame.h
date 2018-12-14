@@ -71,7 +71,6 @@ private:
 	// Define the elements and there position in/on the array/map
 	int renderWidth, renderHeight;
 
-
 	
 	gameState theGameState; 
 	cTexture* tempTextTexture;
@@ -90,14 +89,16 @@ private:
 
 	//Used to save players score and lives
 	int theScore;
-	int lifes;
-	// Used to turn theScore and lifes into string variables
+	int lives;
+	int highScore;
+	// Used to turn theScore and lives into string variables
 	string strScore;
-	string strLifes;
+	string strlives;
+	string strHighScore;
 
-	// Used to run if statement to update score and life changes
+	// Used to run if statement to update score and live changes
 	bool scoreChange = false;
-	bool lifeChange = false;
+	bool liveChange = false;
 
 };
 #endif

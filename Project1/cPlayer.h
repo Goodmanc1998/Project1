@@ -11,10 +11,6 @@ cPlayer.h
 
 class cPlayer : public cSprite
 {
-private:
-	int rocketVelocity;
-	int move;
-
 public:
 	cPlayer();
 	void update(double deltaTime);		// Player update method

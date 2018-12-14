@@ -13,7 +13,7 @@ Defualt Constructor
 */
 cPlayer::cPlayer() : cSprite()
 {
-	//this->rocketVelocity = 100;
+
 }
 /*
 =================================================================

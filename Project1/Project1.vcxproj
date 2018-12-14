@@ -157,7 +157,6 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     <ClInclude Include="cFont.h" />
     <ClInclude Include="cFontMgr.h" />
     <ClInclude Include="cGame.h" />
-    <ClInclude Include="cHighScoreTable.h" />
     <ClInclude Include="cPlayer.h" />
     <ClInclude Include="cSDL2WNDManager.h" />
     <ClInclude Include="cSound.h" />
@@ -171,13 +170,12 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     <ClCompile Include="missileControlSDL.cpp" />
     <ClCompile Include="cMissile.cpp" />
     <ClCompile Include="cBkGround.cpp" />
-    <ClCompile Include="cBulletStuVer.cpp" />
+    <ClCompile Include="cBullet.cpp" />
     <ClCompile Include="cButton.cpp" />
     <ClCompile Include="cButtonMgr.cpp" />
     <ClCompile Include="cFont.cpp" />
     <ClCompile Include="cFontMgr.cpp" />
     <ClCompile Include="cGame.cpp" />
-    <ClCompile Include="cHighScoreTable.cpp" />
     <ClCompile Include="cPlayer.cpp" />
     <ClCompile Include="cSDL2WNDManager.cpp" />
     <ClCompile Include="cSound.cpp" />
@@ -185,6 +183,9 @@ xcopy /Y "SDL2\SDL2_mixer-2.0.1\lib\x86\*.dll" "$(OutDir)"</Command>
     <ClCompile Include="cSprite.cpp" />
     <ClCompile Include="cTexture.cpp" />
     <ClCompile Include="cTextureMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

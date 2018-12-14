@@ -14,6 +14,6 @@
 #include "cSoundMgr.h"
 #include "cButtonMgr.h"
 #include "cButton.h"
-#include "cHighScoreTable.h"
+
 
 #endif
